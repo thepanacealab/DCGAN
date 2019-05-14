@@ -1,0 +1,7 @@
+
+
+In a lot of scenarios, researchers can have some image data which can be blurry or distorted. These data are not useful to accomplish any research task. So, if there were a procedure to reconstruct those distorted image data by analyzing the available similar types of other images, it can be resourceful in many ways.
+
+Deep Convolutional Generative Adversarial Networks (DCGAN) model can generate synthetic or fake images which are similar to authentic image datasets. It has two separate models: a generator which learns the real dataset and tries to produce false data and a discriminator which works as a filter. Basically, the generator creates possible clones of the original data and the discriminator filters out the data which are most dissimilar to the original data. These two models compete with each other, and in this process, the output of the generator gets closer to the authentic dataset.
+
+In the initial part of this project, I trained a DCGAN model with Stanford car datasets consisting of 16,185 real images to investigate if the model can produce synthetic or fake car images. Now I am using NASA'S 3D satellite models to create a satellite image dataset by rotating the 3D models in different angles. This is being done due to the unavailability of extensive satellite image dataset to train the model. This satellite datasets will later be used to train the DCGAN model to produce synthetic satellite images.
